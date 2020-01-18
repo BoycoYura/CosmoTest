@@ -60,7 +60,14 @@ export class SecondFormComponent{
           break; 
        
         case 'mediaOffsetStart':
-          this.createData.efirDuration = parseInt(this.createData.mediaOffsetEnd) - parseInt(this.createData.mediaOffsetStart);
+
+          if(this.createData.mediaOffsetEnd != undefined){
+            this.createData.efirDuration = parseInt(this.createData.mediaOffsetEnd) - parseInt(this.createData.mediaOffsetStart);
+          }
+          else{
+            this.createData.efirDuration = parseInt(this.createData.endTime) - parseInt(this.createData.mediaOffsetStart);
+          }
+
           this.createData.endTime = parseInt(this.createData.startTime)  +  parseInt(this.createData.efirDuration);
           break;
         case 'mediaOffsetEnd':
