@@ -1,0 +1,19 @@
+{
+    "mediaflies": [
+        {
+            "id": 1,
+            "type": "video",
+            "file_name": "video file",
+            "duration": "200",
+            "format": "avi",
+            "size": "450 МБ"
+        },
+        {
+            "id": 2,
+            "type": "audio",
+            "file_name": "audio file",
+            "format": "mpeg",
+            "size": "250 МБ"
+        }
+    ]
+}
